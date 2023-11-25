@@ -7,7 +7,7 @@ import java.util.List;
 public class Tecnico {
 
 
-		private String tecnicoID;
+		private Integer tecnicoID;
 		private List<Servicio> servicios;
 		private LocalDate tiempoResolucion;
 
@@ -19,11 +19,11 @@ public class Tecnico {
 			this.servicios.add(servcio);
 		}
 
-		public String getTecnicoID() {
+		public Integer getTecnicoID() {
 			return tecnicoID;
 		}
 
-		public void setTecnicoID(String tecnicoID) {
+		public void setTecnicoID(Integer tecnicoID) {
 			this.tecnicoID = tecnicoID;
 		}
 
@@ -43,7 +43,9 @@ public class Tecnico {
 			this.tiempoResolucion = tiempoResolucion;
 		}
 
-		
+		public boolean puedeReparar(Incidente incidente)  {
+		return this.servicios.stream().anyMatch(servicioIncidente ->incidente.getServicios() == this.servicios);
+		}
 		
 		
 		

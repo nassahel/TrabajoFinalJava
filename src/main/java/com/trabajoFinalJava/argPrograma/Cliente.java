@@ -50,7 +50,6 @@ public class Cliente {
 	public void setEstadoServicio(boolean estadoServicio) {
 		this.estadoServicio = estadoServicio;
 	}
-	
-	
+
 
 }

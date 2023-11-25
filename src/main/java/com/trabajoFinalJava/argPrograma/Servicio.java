@@ -3,13 +3,13 @@ package com.trabajoFinalJava.argPrograma;
 public class Servicio {
 
 	
-		private String servicioID;
+		private Integer servicioID;
 		private TipoServicio tipoServicio;
 		private String nombre;
-		public String getServicioID() {
+		public Integer getServicioID() {
 			return servicioID;
 		}
-		public void setServicioID(String servicioID) {
+		public void setServicioID(Integer servicioID) {
 			this.servicioID = servicioID;
 		}
 		public TipoServicio getTipoServicio() {

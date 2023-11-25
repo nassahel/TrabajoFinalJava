@@ -4,17 +4,17 @@ import java.time.LocalDate;
 
 public class Incidente {
 
-		private String incidenteID;
+		private Integer incidenteID;
 		private String tipoProblema;
 		private String descripProblema;
 		private Cliente cliente;
 		private Servicio servicios;
 		private EstadoIncidente estadoIncidente;
 		private LocalDate tiempoResolucion;
-		public String getIncidenteID() {
+		public Integer getIncidenteID() {
 			return incidenteID;
 		}
-		public void setIncidenteID(String incidenteID) {
+		public void setIncidenteID(Integer incidenteID) {
 			this.incidenteID = incidenteID;
 		}
 		public String getTipoProblema() {
@@ -53,9 +53,8 @@ public class Incidente {
 		public void setTiempoResolucion(LocalDate tiempoResolucion) {
 			this.tiempoResolucion = tiempoResolucion;
 		}
-	
-		
-		
-		
-		
+
+	public Incidente(Integer incidenteID) {
+		this.incidenteID = incidenteID;
+	}
 }
