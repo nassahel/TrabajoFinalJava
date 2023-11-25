@@ -1,5 +1,5 @@
 package com.trabajoFinalJava.argPrograma;
-//Acá es necesario ingresar la conexión a la base de datos
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
